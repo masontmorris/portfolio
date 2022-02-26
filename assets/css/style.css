@@ -33,3 +33,35 @@ nav a {
 nav a:hover {
     color: #ffd7238e;
 }
+
+main {
+    background-color: #b2b1b9;
+}
+
+main section {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 4rem;
+}
+
+main section h2 {
+    /* padding-right: 2rem; */
+    font-size: 2em;
+}
+
+.hero-image {
+    height: 26rem;
+    background-image: url(../images/marbled-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    position: relative;
+    float: right;
+    top: 85%;
+    right: 2%;
+    font-size: 2em;
+    color: #595260;
+}
