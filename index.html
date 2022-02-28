@@ -4,6 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./assets/css/style.css" />
         <title>Mason Morris</title>
     </head>
@@ -21,21 +24,50 @@
                     <li>
                         <a href="#contact-me">Contact Me</a>
                     </li>
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
                 </ul>
             </nav>
         </header>
-        <div class="hero-image">
-            <div class="hero-text">
-                <h2>A full stack developer</h2>
-            </div>
-        </div>
+        <!-- S -->
         <main>
             <section id="about-me" class="about-me">
-                <h2>About Me</h2>
-                <p>Howdy! I'm Mason, a learning full stack developer based in Raleigh, North Carolina.</p>
+                <div class="portrait">
+                    <img src="./assets/images/portrait.jpg" alt="Mason Morris" />
+                    <h2>About <br />Me</h2>
+                </div>
+                <p>
+                    Howdy! I'm Mason, a learning full stack developer based in Raleigh, North Carolina. Most of my time since graduating from Raleigh Charter High School in 2017 has been spent meandering about, trying to find a passion to pursue in
+                    life, and after exploring a few other options I've finally discovered software development to be something that I not only take to very well, but genuinely enjoy! I'm currently a student of the Coding Bootcamp at UNC-Chapel Hill,
+                    where I'm learning the ins and outs of full stack development at a rapid pace. Outside programming, my passions include video games, history, philosophy, and film.
+                </p>
+            </section>
+            <section id="work" class="work">
+                <h2>Work</h2>
+                <div class="tindog">
+                    <div class="work-child">
+                        <a href="https://masontmorris.github.io/TinDog/"><img src="./assets/images/tindog-image.png" alt="TinDog" class="work-image tindog-image" /></a>
+                        <h3>TinDog</h3>
+                        <p>A practice webpage made during a Udemy course utilizing skills such as Bootstrap and media queries.</p>
+                    </div>
+                </div>
+                <div class="other-works">
+                    <div class="work-child work-child-small">
+                        <a href="https://masontmorris.github.io/horiseon-refactor/"><img src="./assets/images/horiseon-screenshot.png" alt="Horiseon" class="work-image" /></a>
+                        <h3>Horiseon Refactor</h3>
+                        <p>An assignment from the UNC-Chapel Hill Coding Bootcamp where I refactored a given webpage for accessibility.</p>
+                    </div>
+                    <div class="work-child work-child-small">
+                        <a href="https://friendly-lovelace-85dee1.netlify.app/"><img src="./assets/images/get-weezered.png" alt="Get Weezered" class="work-image" /></a>
+                        <h3>Get Weezered</h3>
+                        <p>A joke webpage I worked on with a friend utilizing simple Javascript.</p>
+                    </div>
+                </div>
+            </section>
+            <div class="break"></div>
+            <section id="contact-me" class="contact-me">
+                <h3>Email</h3>
+                <h4>masonmorris8@gmail.com</h4>
+                <h3>Phone</h3>
+                <h4>(919) 606-9562</h4>
             </section>
         </main>
     </body>

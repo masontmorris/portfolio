@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+body {
+    background-color: #b2b1b9;
+    font-family: "League Spartan", sans-serif;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -18,10 +23,11 @@ nav h1 {
 nav ul {
     display: flex;
     list-style: none;
+    padding-right: 3rem;
 }
 
 nav li {
-    padding: 1rem 0 0 1rem;
+    padding: 1rem 0 0 4rem;
 }
 
 nav a {
@@ -34,15 +40,11 @@ nav a:hover {
     color: #ffd7238e;
 }
 
-main {
-    background-color: #b2b1b9;
-}
-
 main section {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    gap: 4rem;
+    gap: 1rem;
 }
 
 main section h2 {
@@ -50,18 +52,137 @@ main section h2 {
     font-size: 2em;
 }
 
-.hero-image {
-    height: 26rem;
-    background-image: url(../images/marbled-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.portrait {
+    align-self: unset;
+    position: relative;
+    top: 4.5em;
+    right: 2em;
 }
 
-.hero-text {
+.portrait img {
+    width: 300px;
+    padding-bottom: 1rem;
+}
+
+.about-me p {
+    word-wrap: break-word;
+    width: 450px;
+    align-self: unset;
     position: relative;
-    float: right;
-    top: 85%;
-    right: 2%;
-    font-size: 2em;
-    color: #595260;
+    top: 5.5rem;
+    font-size: 20px;
+}
+
+.about-me h2 {
+    text-align: end;
+}
+
+.portrait img {
+    width: 15rem;
+}
+
+.work {
+    position: relative;
+    top: 10em;
+}
+
+.work {
+    display: block;
+}
+
+.work h2 {
+    text-align: center;
+}
+
+.tindog {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.work-child {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.work-child p {
+    word-wrap: break-word;
+    width: 600px;
+}
+
+.work-child-small p {
+    width: 400px;
+}
+
+.work-image {
+    opacity: 1;
+    transition: opacity 0.5s;
+    width: 400px;
+}
+
+.work-image:hover {
+    opacity: 0.3;
+}
+
+.tindog-image {
+    width: 600px;
+}
+
+.other-works {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+.break {
+    height: 200px;
+}
+
+.contact-me {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 826px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    nav li {
+        padding: 0;
+    }
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-me p {
+        width: 300px;
+    }
+
+    .work-image {
+        width: 200px;
+    }
+    .tindog-image {
+        width: 300px;
+    }
+    .work-child p {
+        width: 300px;
+    }
+    .other-works {
+        flex-direction: column;
+        align-items: center;
+    }
+    body {
+        text-align: center;
+        margin: auto;
+    }
 }
